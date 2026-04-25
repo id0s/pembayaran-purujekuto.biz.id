@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Payment::checkout');
 $routes->get('checkout', 'Payment::checkout');
 $routes->post('api/notif', 'Payment::receiveNotif');
 $routes->get('payment/check-status/(:any)', 'Payment::checkStatus/$1');
